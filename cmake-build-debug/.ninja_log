@@ -1,0 +1,6 @@
+# ninja log v5
+3	1184	7415053055188042	CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj	3dfa08fb00921f70
+113	2650	7415053069809423	CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj	f05dbbe00409bf0d
+61	2010	7415053063418046	CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj	ecaf59e6202daf5c
+2651	3675	7415053080006721	Proyecto_CINETEC.exe	48bd339a0c9c0781
+2	334	7415053930368965	build.ninja	860e794265933bad
