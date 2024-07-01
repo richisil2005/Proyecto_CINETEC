@@ -1,105 +1,60 @@
 #include <iostream>
-#include <fstream>
-#include <sstream>
-#include <vector>
-#include <string>
 #include <unordered_map>
-#include <algorithm>
+#include <vector>
 #include "peliculas.h"
 #include "favoritos.h"
 
-using namespace std;
-
 int main() {
-    unordered_map<string, Pelicula> peliculas = cargarPeliculas("CSV.csv");
+    std::unordered_map<std::string, Pelicula> peliculas = cargarPeliculas("CSV.csv");
 
-    cout << "-----------------------CINETEC-----------------------" << endl;
+    int opcion;
+    do {
+        std::cout << "-----------------------CINETEC-----------------------\n";
+        std::cout << "Opciones disponibles:\n";
+        std::cout << "1. Ver recomendaciones\n";
+        std::cout << "2. Buscar peliculas por titulo\n";
+        std::cout << "3. Buscar peliculas por etiquetas\n";
+        std::cout << "4. Ver detalles de una pelicula\n";
+        std::cout << "5. Agregar pelicula a favoritos\n";
+        std::cout << "6. Salir\n";
+        std::cout << "Seleccione una opcion: ";
+        std::cin >> opcion;
 
-    while (true) {
-        cout << "\nOpciones disponibles:" << endl;
-        cout << "1. Ver recomendaciones" << endl;
-        cout << "2. Buscar películas por título" << endl;
-        cout << "3. Buscar películas por etiquetas" << endl;
-        cout << "4. Ver detalles de una película" << endl;
-        cout << "5. Agregar película a favoritos" << endl;
-        cout << "6. Salir" << endl;
-
-        cout << "\nSeleccione una opción: ";
-        int opcion;
-        cin >> opcion;
-        cout << endl;
-
-        if (opcion == 1) {
-            cout << "Recomendaciones:" << endl;
-            vector<Pelicula> recomendaciones = recomendarPeliculas(peliculas);
-
-            if (recomendaciones.empty()) {
-                cout << "No hay recomendaciones disponibles en este momento." << endl;
-            } else {
-                cout << "Las siguientes películas te pueden interesar:" << endl;
-                for (const Pelicula& pelicula : recomendaciones) {
-                    cout << "- " << pelicula.titulo << endl;
-                }
+        switch (opcion) {
+            case 1:
+                // Lógica para ver recomendaciones
+                break;
+            case 2: {
+                std::string titulo;
+                std::cout << "Ingrese el titulo de la pelicula: ";
+                std::cin.ignore();
+                std::getline(std::cin, titulo);
+                std::vector<Pelicula> resultados = buscarPeliculas(peliculas, titulo);
+                // Mostrar resultados
+                break;
             }
-        } else if (opcion == 2) {
-            cout << "Ingrese el título de la película a buscar: ";
-            string termino;
-            cin.ignore();
-            getline(cin, termino);
-
-            vector<Pelicula> resultados = buscarPeliculas(peliculas, termino);
-            cout << "Resultados de la búsqueda:" << endl;
-            for (const Pelicula& pelicula : resultados) {
-                cout << "- " << pelicula.titulo << endl;
+            case 3: {
+                std::string tag;
+                std::cout << "Ingrese la etiqueta de la pelicula: ";
+                std::cin.ignore();
+                std::getline(std::cin, tag);
+                std::vector<Pelicula> resultados = buscarPorTag(peliculas, tag);
+                // Mostrar resultados
+                break;
             }
-        } else if (opcion == 3) {
-            cout << "Ingrese la etiqueta a buscar: ";
-            string etiqueta;
-            cin >> etiqueta;
-
-            vector<Pelicula> resultados = buscarPorTag(peliculas, etiqueta);
-            cout << "Resultados de la búsqueda:" << endl;
-            for (const Pelicula& pelicula : resultados) {
-                cout << "- " << pelicula.titulo << endl;
-            }
-        } else if (opcion == 4) {
-            cout << "Ingrese el título de la película a ver detalles: ";
-            string titulo;
-            cin.ignore();
-            getline(cin, titulo);
-
-            if (peliculas.find(titulo) != peliculas.end()) {
-                verPelicula(peliculas[titulo]);
-            } else {
-                cout << "Película no encontrada." << endl;
-            }
-        } else if (opcion == 5) {
-            cout << "Función agregar película a favoritos aún no implementada." << endl;
-                    }
-        
-        } else if (opcion == 5) {
-            cout << "Ingrese el título de la película a agregar a favoritos: ";
-            string titulo;
-            cin.ignore();
-            getline(cin, titulo);
-
-            if (peliculas.find(titulo) != peliculas.end()) {
-                agregarVerMasTarde(peliculas[titulo]);
-                cout << "Película agregada a favoritos." << endl;
-            } else {
-                cout << "Película no encontrada." << endl;
-            }
-
-            
-        } else if (opcion == 6) {
-            cout << "¡Hasta luego!" << endl;
-            break;
-        } else {
-            cout << "Opción no válida. Por favor, seleccione una opción válida." << endl;
+            case 4:
+                // Lógica para ver detalles de una pelicula
+                break;
+            case 5:
+                // Lógica para agregar pelicula a favoritos
+                break;
+            case 6:
+                std::cout << "Saliendo...\n";
+                break;
+            default:
+                std::cout << "Opcion invalida.\n";
         }
-    }
+    } while (opcion != 6);
 
     return 0;
 }
-
-

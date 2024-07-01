@@ -1,0 +1,3 @@
+C:/Users/Sheyla/Documents/Proyecto_CINETEC/cmake-build-debug/CMakeFiles/Proyecto_CINETEC.dir
+C:/Users/Sheyla/Documents/Proyecto_CINETEC/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Sheyla/Documents/Proyecto_CINETEC/cmake-build-debug/CMakeFiles/rebuild_cache.dir

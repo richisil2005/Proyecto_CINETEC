@@ -18,8 +18,8 @@ namespace std {
         vector<Pelicula> recomendaciones;
         for (const auto& like : likes) {
             for (const auto& par : peliculas) {
-                if (par.second.titulo != like.first && 
-                    find_if(recomendaciones.begin(), recomendaciones.end(), 
+                if (par.second.titulo != like.first &&
+                    find_if(recomendaciones.begin(), recomendaciones.end(),
                             [&par](const Pelicula& p) { return p.titulo == par.second.titulo; }) == recomendaciones.end()) {
                     recomendaciones.push_back(par.second);
                 }
@@ -44,7 +44,7 @@ namespace std {
         cout << "Titulo: " << pelicula.titulo << endl;
         cout << "Sinopsis: " << pelicula.sinopsis << endl;
         cout << "1. Like" << endl;
-        cout << "2. Ver más tarde" << endl;
+        cout << "2. Ver mas tarde" << endl;
         cout << "3. Regresar" << endl;
     }
 }

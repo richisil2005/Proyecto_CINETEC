@@ -5,22 +5,14 @@
 #include <vector>
 #include <unordered_map>
 
-namespace std {
-    struct Pelicula {
-        string titulo;
-        string sinopsis;
-        vector<string> tags;
-    };
+struct Pelicula {
+    std::string titulo;
+    std::string sinopsis;
+    std::vector<std::string> tags;
+};
 
-    unordered_map<string, Pelicula> cargarPeliculas(const string& nombreArchivo);
-    vector<Pelicula> buscarPeliculas(const unordered_map<string, Pelicula>& peliculas, const string& termino);
-    vector<Pelicula> buscarPorTag(const unordered_map<string, Pelicula>& peliculas, const string& tag);
-}
+std::unordered_map<std::string, Pelicula> cargarPeliculas(const std::string& nombreArchivo);
+std::vector<Pelicula> buscarPeliculas(const std::unordered_map<std::string, Pelicula>& peliculas, const std::string& termino);
+std::vector<Pelicula> buscarPorTag(const std::unordered_map<std::string, Pelicula>& peliculas, const std::string& tag);
 
-#endif // PELICULAS_H
-
-
-
-
-
-
+#endif
