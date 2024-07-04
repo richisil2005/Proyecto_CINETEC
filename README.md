@@ -1,5 +1,5 @@
 # CINETEC
-La mejor plataforma de Streaming del mercado
+La mejor plataforma de Streaming del mercado!!!!!
 ### Integrantes:
 -Santiago Miguel Silva Reyes
 
