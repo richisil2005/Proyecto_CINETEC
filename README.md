@@ -7,6 +7,6 @@ La mejor plataforma de Streaming del mercado!!!!!
 
 -Jose Espinoza Verano
 
-
+-Rodrigo Gallegos 
 
 Proyecto de Programación III
