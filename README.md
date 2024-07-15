@@ -1,13 +1,10 @@
 # CINETEC
 La mejor plataforma de Streaming del mercado!!!!!
 ### Fundadores:
--Santiago Miguel Silva Reyes
-
--Oscar Renato Guerrero Oblitas
-
--Jose Espinoza Verano
-
--Rodrigo Gallegos
+* Santiago Miguel Silva Reyes
+* Oscar Renato Guerrero Oblitas
+* Jose Espinoza Verano
+* Rodrigo Gallegos
 
 ## Conoce un poco más de CINETEC:
 CINETEC es una innovadora plataforma de streaming diseñada para proporcionar a los usuarios una experiencia óptima al buscar y visualizar sinopsis de películas. Con una interfaz amigable y funcionalidades avanzadas, CINETEC se posiciona como la mejor opción en el mercado. CINETEC fue desplegada el 15 de Julio de 2024 y desde su lanzamiento no ha decrecido su popularidad debido a lo sencillo y óptimo que es visualizar datos de diferentes películas de todo el mundo 
