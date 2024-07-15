@@ -20,7 +20,7 @@ void Favoritos::mostrarFavoritos(const std::unordered_map<std::string, Pelicula>
 }
 
 void Favoritos::mostrarVerMasTarde(const std::unordered_map<std::string, Pelicula>& peliculas) const {
-    std::cout << "Peliculas para ver mas tarde:\n";
+    std::cout << "Peliculas para ver más tarde:\n";
     for (const auto& id : verMasTarde) {
         auto it = peliculas.find(id);
         if (it != peliculas.end()) {
@@ -43,7 +43,7 @@ void agregarAVerMasTarde(Favoritos& favoritos, const std::unordered_map<std::str
     auto it = peliculas.find(id);
     if (it != peliculas.end()) {
         favoritos.agregarVerMasTarde(it->second);
-        std::cout << "Pelicula agregada a Ver mas tarde.\n";
+        std::cout << "Pelicula agregada a Ver más tarde.\n";
     } else {
         std::cout << "Pelicula no encontrada.\n";
     }

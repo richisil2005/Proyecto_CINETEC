@@ -2,7 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <sstream>
-#include <algorithm>
+#include <algorithm> // Necesario para std::find
 
 std::unordered_map<std::string, Pelicula> cargarPeliculas(const std::string& nombreArchivo) {
     std::unordered_map<std::string, Pelicula> peliculas;

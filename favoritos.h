@@ -19,4 +19,4 @@ private:
 void agregarAFavoritos(Favoritos& favoritos, const std::unordered_map<std::string, Pelicula>& peliculas, const std::string& id);
 void agregarAVerMasTarde(Favoritos& favoritos, const std::unordered_map<std::string, Pelicula>& peliculas, const std::string& id);
 
-#endif // FAVORITOS_H
+#endif

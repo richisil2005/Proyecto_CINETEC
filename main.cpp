@@ -12,9 +12,9 @@ void mostrarOpciones() {
     std::cout << "3. Buscar peliculas por etiquetas\n";
     std::cout << "4. Ver detalles de una pelicula\n";
     std::cout << "5. Agregar pelicula a favoritos\n";
-    std::cout << "6. Agregar pelicula a Ver mas tarde\n";
+    std::cout << "6. Agregar pelicula a Ver más tarde\n";
     std::cout << "7. Ver peliculas favoritas\n";
-    std::cout << "8. Ver peliculas para ver mas tarde\n";
+    std::cout << "8. Ver peliculas para ver más tarde\n";
     std::cout << "9. Salir\n";
 }
 
@@ -59,7 +59,7 @@ int main() {
                 std::getline(std::cin, id);
                 Pelicula pelicula = obtenerDetallesPelicula(peliculas, id);
                 mostrarDetallePelicula(pelicula);
-                std::cout << "1. Me gusta\n2. Ver mas tarde\n3. Volver al menu\n";
+                std::cout << "1. Me gusta\n2. Ver más tarde\n3. Volver al menú\n";
                 int opcion_detalle;
                 std::cin >> opcion_detalle;
                 if (opcion_detalle == 1) {
@@ -79,7 +79,7 @@ int main() {
             }
             case 6: {
                 std::string id;
-                std::cout << "Ingrese el ID de la pelicula a agregar a Ver mas tarde: ";
+                std::cout << "Ingrese el ID de la pelicula a agregar a Ver más tarde: ";
                 std::cin.ignore();
                 std::getline(std::cin, id);
                 agregarAVerMasTarde(favoritos, peliculas, id);
