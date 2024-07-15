@@ -1,18 +1,22 @@
 #ifndef FAVORITOS_H
 #define FAVORITOS_H
+
 #include "peliculas.h"
-#include <vector>
-#include <unordered_map>
+#include <unordered_set>
 
-namespace std {
-    extern std::vector<Pelicula> verMasTarde;
-    extern std::unordered_map<std::string, int> likes;
-
+class Favoritos {
+public:
+    void agregarFavorito(const Pelicula& pelicula);
     void agregarVerMasTarde(const Pelicula& pelicula);
-    void agregarLike(const Pelicula& pelicula);
-    std::vector<Pelicula> recomendarPeliculas(const std::unordered_map<std::string, Pelicula>& peliculas);
-    void mostrarPeliculas(const std::vector<Pelicula>& peliculas, int pagina);
-    void verPelicula(const Pelicula& pelicula);
-}
+    void mostrarFavoritos(const std::unordered_map<std::string, Pelicula>& peliculas) const;
+    void mostrarVerMasTarde(const std::unordered_map<std::string, Pelicula>& peliculas) const;
 
-#endif
+private:
+    std::unordered_set<std::string> favoritos;
+    std::unordered_set<std::string> verMasTarde;
+};
+
+void agregarAFavoritos(Favoritos& favoritos, const std::unordered_map<std::string, Pelicula>& peliculas, const std::string& id);
+void agregarAVerMasTarde(Favoritos& favoritos, const std::unordered_map<std::string, Pelicula>& peliculas, const std::string& id);
+
+#endif // FAVORITOS_H
