@@ -38,4 +38,7 @@ Si quieres aprender mejor sobre la arquitectura de CINETEC y como llegamos a cre
 * Cormen, T. H., Leiserson, C. E., Rivest, R. L., Stein, C. (2001). *Introduction To Algorithms*. India: MIT Press.
 * Garrido Carrillo, A. (2017). *Programación genérica en C++: La biblioteca estándar*. Distribuido por: EUG
 
+## Observaciones
+Al momento de cargar un csv, este está mal estructurado es decir que no esta correctamente distribuido entre las celdas, CINETEC no va a tener la capacidad de leer correctamente el csv por lo que la búsqueda de películas no sera muy exacta pero como CINETEC es la mejor plataforma de streaming de todo el Perú si relacionara su búsqueda con una película.
+
 
