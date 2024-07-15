@@ -18,7 +18,7 @@ Este magnífico sistema inicia cargando una base de datos en formato .csv que co
 Los usuarios pueden realizar búsquedas de películas de dos maneras principales: por palabra clave/frase y por tags específicos.
 #### Búsqueda por Palabra Clave o Frase:
 Los usuarios pueden ingresar cualquier palabra clave o frase para buscar películas relacionadas. El programa utiliza algoritmos de búsqueda de texto para encontrar coincidencias en los títulos y descripciones de las películas. Los resultados de búsqueda muestran las cinco películas más relevantes basadas en la coincidencia de texto. 
-### Búsqueda por Tags:
+#### Búsqueda por Tags:
 Además de las búsquedas de texto, los usuarios pueden buscar películas por tags específicos como cult, horror, drama, etc. Los tags permiten una categorización más precisa y rápida de las películas basadas en sus géneros o características específicas.
 
 ### Visualización de Sinopsis
