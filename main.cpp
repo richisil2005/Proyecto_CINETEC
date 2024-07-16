@@ -16,8 +16,7 @@ void mostrarMenu() {
     cout << "2. Buscar pelicula por genero\n";
     cout << "3. Lista de Ver mas tarde \n";
     cout << "4. Tus me gusta <3\n";
-    cout << "5. Ver recomendaciones\n";
-    cout << "6. Salir\n";
+    cout << "5. Salir\n";
     cout << "Que quieres hacer hoy??: ";
 }
 
@@ -48,13 +47,13 @@ int main() {
                 break;
             case 4: mostrarLikes<PeliculaEspecifica>(peliculas);
                 break;
-            case 5: explorador.mostrarSimilaresALikes();
+            case 5: cout << "Vuelva pronto CINETEC LO ESPERA!! \n";
                 break;
-            case 6: cout << "Vuelva pronto CINETEC LO ESPERA!! \n";
+            case 6: explorador.mostrarSimilaresALikes();
                 break;
             default: cout << "Opcion no existente.\n";
         }
-    } while (opcion != 6);
+    } while (opcion != 5);
     for (auto pelicula : peliculas) delete pelicula;
     return 0;
 }
