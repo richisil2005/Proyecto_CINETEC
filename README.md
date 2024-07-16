@@ -28,7 +28,7 @@ Al seleccionar una película de los resultados de búsqueda, se muestra la sinop
 El sistema utiliza un algoritmo de recomendación que analiza las películas a las que el usuario ha marcado y sugiere películas similares. Este algoritmo puede considerar diversos factores como géneros, directores, actores, y otros atributos para encontrar películas que coincidan con las preferencias del usuario.
 
 ### Manuel Para Empezar Tu Aventura En CINETEC
-Con el fin de que te familiarizes con el uso de CINETEC hemos elaborado un video con el cual puedes aprender mejor a usar CINETEC. *Manual videovisual de CINETEC:*
+Con el fin de que te familiarizes con el uso de CINETEC hemos elaborado un video con el cual puedes aprender mejor a usar CINETEC. *Manual videovisual de CINETEC:* https://youtu.be/gkUEb2kehWU
 
 ## Bibliografía 
 Si quieres aprender mejor sobre la arquitectura de CINETEC y como llegamos a crear esta maravillosa plataforma, te recomendamos observar esta documentación:
