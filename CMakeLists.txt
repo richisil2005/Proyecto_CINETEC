@@ -7,5 +7,4 @@ include_directories(.)
 
 add_executable(Proyecto_CINETEC
         main.cpp
-        peliculas.cpp
-        favoritos.cpp)
+)

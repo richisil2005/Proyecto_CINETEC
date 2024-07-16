@@ -128,30 +128,6 @@ Proyecto_CINETEC/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/build
 .PHONY : Proyecto_CINETEC/fast
 
-favoritos.obj: favoritos.cpp.obj
-.PHONY : favoritos.obj
-
-# target to build an object file
-favoritos.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj
-.PHONY : favoritos.cpp.obj
-
-favoritos.i: favoritos.cpp.i
-.PHONY : favoritos.i
-
-# target to preprocess a source file
-favoritos.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.i
-.PHONY : favoritos.cpp.i
-
-favoritos.s: favoritos.cpp.s
-.PHONY : favoritos.s
-
-# target to generate assembly for a file
-favoritos.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.s
-.PHONY : favoritos.cpp.s
-
 main.obj: main.cpp.obj
 .PHONY : main.obj
 
@@ -176,30 +152,6 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/main.cpp.s
 .PHONY : main.cpp.s
 
-peliculas.obj: peliculas.cpp.obj
-.PHONY : peliculas.obj
-
-# target to build an object file
-peliculas.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj
-.PHONY : peliculas.cpp.obj
-
-peliculas.i: peliculas.cpp.i
-.PHONY : peliculas.i
-
-# target to preprocess a source file
-peliculas.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.i
-.PHONY : peliculas.cpp.i
-
-peliculas.s: peliculas.cpp.s
-.PHONY : peliculas.s
-
-# target to generate assembly for a file
-peliculas.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Proyecto_CINETEC.dir\build.make CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.s
-.PHONY : peliculas.cpp.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -209,15 +161,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... Proyecto_CINETEC
-	@echo ... favoritos.obj
-	@echo ... favoritos.i
-	@echo ... favoritos.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... peliculas.obj
-	@echo ... peliculas.i
-	@echo ... peliculas.s
 .PHONY : help
 
 

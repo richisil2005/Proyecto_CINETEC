@@ -8,9 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "C:/Users/Sheyla/Documents/Proyecto_CINETEC/favoritos.cpp" "CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj" "gcc" "CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj.d"
   "C:/Users/Sheyla/Documents/Proyecto_CINETEC/main.cpp" "CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj" "gcc" "CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj.d"
-  "C:/Users/Sheyla/Documents/Proyecto_CINETEC/peliculas.cpp" "CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj" "gcc" "CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

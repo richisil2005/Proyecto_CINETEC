@@ -2,105 +2,59 @@
 #include <unordered_map>
 #include <vector>
 #include "peliculas.h"
-#include "favoritos.h"
+#include "adpeliculas.h"
+#include "mapeo.h"
+#include "navbar.h"
+#include "recomendaciones.h"
+#include "similarespe.h"
+using namespace std;
+typedef Pelicula<string> PeliculaEspecifica;
 
-void mostrarOpciones() {
-    std::cout << "------------------------CINETEC------------------------\n";
-    std::cout << "Opciones disponibles:\n";
-    std::cout << "1. Ver recomendaciones\n";
-    std::cout << "2. Buscar peliculas por titulo\n";
-    std::cout << "3. Buscar peliculas por etiquetas\n";
-    std::cout << "4. Ver detalles de una pelicula\n";
-    std::cout << "5. Agregar pelicula a favoritos\n";
-    std::cout << "6. Agregar pelicula a Ver más tarde\n";
-    std::cout << "7. Ver peliculas favoritas\n";
-    std::cout << "8. Ver peliculas para ver más tarde\n";
-    std::cout << "9. Salir\n";
+void mostrarMenu() {
+    cout << "-----------------------CINETEC--------------------------------";
+    cout << "\n1. Buscar pelicula\n";
+    cout << "2. Buscar pelicula por genero\n";
+    cout << "3. Lista de Ver mas tarde \n";
+    cout << "4. Tus me gusta <3\n";
+    cout << "5. Ver recomendaciones\n";
+    cout << "6. Salir\n";
+    cout << "Que quieres hacer hoy??: ";
 }
 
 int main() {
-    std::unordered_map<std::string, Pelicula> peliculas = cargarPeliculas("CSV.csv");
-    Favoritos favoritos;
+    vector<PeliculaEspecifica*> peliculas = leerArchivoCSV<string>("CSV.csv", 2);
+    MapaTitulosPeliculas* mapaTitulos = MapaTitulosPeliculas::getInstance();
+    PeliculasSimilaresPorEtiqueta<PeliculaEspecifica> estrategia;
+    ExploradorPeliculas<PeliculaEspecifica> explorador(&estrategia, peliculas);
+    unordered_map<string, vector<int>> mapaEtiquetas;
+    auto& mapa = mapaTitulos->getMapa();
+
+    for (int i = 0; i < peliculas.size(); ++i) {
+        mapaTitulos->insertar(peliculas[i]->titulo, i);
+        istringstream tagStream(peliculas[i]->etiquetas);
+        string etiqueta;
+        while (getline(tagStream, etiqueta, ',')) mapaEtiquetas[etiqueta].push_back(i);
+    }
     int opcion;
-
     do {
-        mostrarOpciones();
-        std::cout << "Seleccione una opcion: ";
-        std::cin >> opcion;
-
+        mostrarMenu();
+        cin >> opcion;
         switch (opcion) {
-            case 1: {
-                std::vector<Pelicula> recomendaciones = recomendarPeliculas(peliculas);
-                mostrarPeliculas(recomendaciones, 0, 5);
+            case 1: buscarPorTitulo<PeliculaEspecifica>(mapa, peliculas);
                 break;
-            }
-            case 2: {
-                std::string termino;
-                std::cout << "Ingrese el titulo o parte del titulo: ";
-                std::cin.ignore();
-                std::getline(std::cin, termino);
-                std::vector<Pelicula> resultados = buscarPorTitulo(peliculas, termino);
-                mostrarPeliculas(resultados, 0, 5);
+            case 2: buscarPorEtiqueta<PeliculaEspecifica>(mapaEtiquetas, peliculas);
                 break;
-            }
-            case 3: {
-                std::string tag;
-                std::cout << "Ingrese la etiqueta: ";
-                std::cin.ignore();
-                std::getline(std::cin, tag);
-                std::vector<Pelicula> resultados = buscarPorTag(peliculas, tag);
-                mostrarPeliculas(resultados, 0, 5);
+            case 3: mostrarVerMasTarde<PeliculaEspecifica>(peliculas);
                 break;
-            }
-            case 4: {
-                std::string id;
-                std::cout << "Ingrese el ID de la pelicula: ";
-                std::cin.ignore();
-                std::getline(std::cin, id);
-                Pelicula pelicula = obtenerDetallesPelicula(peliculas, id);
-                mostrarDetallePelicula(pelicula);
-                std::cout << "1. Me gusta\n2. Ver más tarde\n3. Volver al menú\n";
-                int opcion_detalle;
-                std::cin >> opcion_detalle;
-                if (opcion_detalle == 1) {
-                    agregarAFavoritos(favoritos, peliculas, id);
-                } else if (opcion_detalle == 2) {
-                    agregarAVerMasTarde(favoritos, peliculas, id);
-                }
+            case 4: mostrarLikes<PeliculaEspecifica>(peliculas);
                 break;
-            }
-            case 5: {
-                std::string id;
-                std::cout << "Ingrese el ID de la pelicula a agregar a favoritos: ";
-                std::cin.ignore();
-                std::getline(std::cin, id);
-                agregarAFavoritos(favoritos, peliculas, id);
+            case 5: explorador.mostrarSimilaresALikes();
                 break;
-            }
-            case 6: {
-                std::string id;
-                std::cout << "Ingrese el ID de la pelicula a agregar a Ver más tarde: ";
-                std::cin.ignore();
-                std::getline(std::cin, id);
-                agregarAVerMasTarde(favoritos, peliculas, id);
+            case 6: cout << "Vuelva pronto CINETEC LO ESPERA!! \n";
                 break;
-            }
-            case 7: {
-                favoritos.mostrarFavoritos(peliculas);
-                break;
-            }
-            case 8: {
-                favoritos.mostrarVerMasTarde(peliculas);
-                break;
-            }
-            case 9:
-                std::cout << "Saliendo...\n";
-                break;
-            default:
-                std::cout << "Opcion invalida. Intente nuevamente.\n";
-                break;
+            default: cout << "Opcion no existente.\n";
         }
-    } while (opcion != 9);
-
+    } while (opcion != 6);
+    for (auto pelicula : peliculas) delete pelicula;
     return 0;
 }

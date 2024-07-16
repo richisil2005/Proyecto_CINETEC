@@ -83,53 +83,19 @@ CMakeFiles/Proyecto_CINETEC.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_CINETEC.dir/main.cpp.s"
 	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sheyla\Documents\Proyecto_CINETEC\main.cpp -o CMakeFiles\Proyecto_CINETEC.dir\main.cpp.s
 
-CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj: CMakeFiles/Proyecto_CINETEC.dir/flags.make
-CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj: CMakeFiles/Proyecto_CINETEC.dir/includes_CXX.rsp
-CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj: C:/Users/Sheyla/Documents/Proyecto_CINETEC/peliculas.cpp
-CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj: CMakeFiles/Proyecto_CINETEC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Sheyla\Documents\Proyecto_CINETEC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj -MF CMakeFiles\Proyecto_CINETEC.dir\peliculas.cpp.obj.d -o CMakeFiles\Proyecto_CINETEC.dir\peliculas.cpp.obj -c C:\Users\Sheyla\Documents\Proyecto_CINETEC\peliculas.cpp
-
-CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sheyla\Documents\Proyecto_CINETEC\peliculas.cpp > CMakeFiles\Proyecto_CINETEC.dir\peliculas.cpp.i
-
-CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sheyla\Documents\Proyecto_CINETEC\peliculas.cpp -o CMakeFiles\Proyecto_CINETEC.dir\peliculas.cpp.s
-
-CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj: CMakeFiles/Proyecto_CINETEC.dir/flags.make
-CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj: CMakeFiles/Proyecto_CINETEC.dir/includes_CXX.rsp
-CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj: C:/Users/Sheyla/Documents/Proyecto_CINETEC/favoritos.cpp
-CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj: CMakeFiles/Proyecto_CINETEC.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Sheyla\Documents\Proyecto_CINETEC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj -MF CMakeFiles\Proyecto_CINETEC.dir\favoritos.cpp.obj.d -o CMakeFiles\Proyecto_CINETEC.dir\favoritos.cpp.obj -c C:\Users\Sheyla\Documents\Proyecto_CINETEC\favoritos.cpp
-
-CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.i"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Sheyla\Documents\Proyecto_CINETEC\favoritos.cpp > CMakeFiles\Proyecto_CINETEC.dir\favoritos.cpp.i
-
-CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.s"
-	C:\PROGRA~1\JETBRA~1\CLION2~1.2\bin\mingw\bin\G__~1.EXE $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Sheyla\Documents\Proyecto_CINETEC\favoritos.cpp -o CMakeFiles\Proyecto_CINETEC.dir\favoritos.cpp.s
-
 # Object files for target Proyecto_CINETEC
 Proyecto_CINETEC_OBJECTS = \
-"CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj" \
-"CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj" \
-"CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj"
+"CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj"
 
 # External object files for target Proyecto_CINETEC
 Proyecto_CINETEC_EXTERNAL_OBJECTS =
 
 Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj
-Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj
-Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj
 Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/build.make
 Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/linkLibs.rsp
 Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/objects1.rsp
 Proyecto_CINETEC.exe: CMakeFiles/Proyecto_CINETEC.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Sheyla\Documents\Proyecto_CINETEC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Proyecto_CINETEC.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Sheyla\Documents\Proyecto_CINETEC\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Proyecto_CINETEC.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\Proyecto_CINETEC.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -1,10 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj"
-  "CMakeFiles/Proyecto_CINETEC.dir/favoritos.cpp.obj.d"
   "CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj"
   "CMakeFiles/Proyecto_CINETEC.dir/main.cpp.obj.d"
-  "CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj"
-  "CMakeFiles/Proyecto_CINETEC.dir/peliculas.cpp.obj.d"
   "Proyecto_CINETEC.exe"
   "Proyecto_CINETEC.exe.manifest"
   "Proyecto_CINETEC.pdb"

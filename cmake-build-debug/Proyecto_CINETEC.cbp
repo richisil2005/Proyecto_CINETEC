@@ -84,19 +84,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/Sheyla/Documents/Proyecto_CINETEC/favoritos.cpp">
-			<Option target="Proyecto_CINETEC"/>
-		</Unit>
-		<Unit filename="C:/Users/Sheyla/Documents/Proyecto_CINETEC/favoritos.h">
-			<Option target="Proyecto_CINETEC"/>
-		</Unit>
 		<Unit filename="C:/Users/Sheyla/Documents/Proyecto_CINETEC/main.cpp">
-			<Option target="Proyecto_CINETEC"/>
-		</Unit>
-		<Unit filename="C:/Users/Sheyla/Documents/Proyecto_CINETEC/peliculas.cpp">
-			<Option target="Proyecto_CINETEC"/>
-		</Unit>
-		<Unit filename="C:/Users/Sheyla/Documents/Proyecto_CINETEC/peliculas.h">
 			<Option target="Proyecto_CINETEC"/>
 		</Unit>
 		<Unit filename="C:/Users/Sheyla/Documents/Proyecto_CINETEC/CMakeLists.txt">
